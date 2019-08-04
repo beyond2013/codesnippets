@@ -1,0 +1,13 @@
+extends ruby
+snippet feat
+Feature: ${1:Description of the feature goes here}
+
+${2:More description here} 
+  Background: ${3: describe the state in which the system should be}
+    Given $4 
+    And $5
+
+  Scenario: ${6: each feature has many scenarios}
+	When $7
+	Then $0
+endsnippet
